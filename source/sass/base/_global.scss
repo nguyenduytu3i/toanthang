@@ -3,43 +3,47 @@
 // --------------------------------------------------
 
 @font-face {
-    font-family: 'utmavo';
-    src: url('../fonts/utmavo.eot');
-    src: local('utmavo'), url('../fonts/utmavo.woff') format('woff'), url('../fonts/utmavo.ttf') format('truetype');
+  font-family: 'utmavo';
+  src: url('../fonts/utmavo.eot');
+  src: local('utmavo'), url('../fonts/utmavo.woff') format('woff'), url('../fonts/utmavo.ttf') format('truetype');
 }
 
 body {
-    // font-family: $font-family-primary;
-    background-color: $white;
+  // font-family: $font-family-primary;
+  background-color: $white;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+  .container {
+    width: 1200px;
+  }
 }
 
 .media {
-    .media-left {
-        img {
-            min-width: 64px;
-        }
+  .media-left {
+    img {
+      min-width: 64px;
     }
+  }
 }
 
 .news-block {
-    .media {
-        .media-left {
-            a,
-            img {
-                width: 98px;
-                display: inline-block;
-            }
+  .media {
+    .media-left {
+      a,
+      img {
+        width: 98px;
+        display: inline-block;
+      }
 
-            img {
-                border: 1px solid #ccc;
-                padding: 3px;
-            }
-        }
+      img {
+        border: 1px solid #ccc;
+        padding: 3px;
+      }
     }
+  }
+}
+
+.relative {
+  position: relative;
 }
