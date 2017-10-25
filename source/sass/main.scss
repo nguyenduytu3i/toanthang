@@ -8,6 +8,7 @@
 @import 'bootstrap';
 @import 'font-awesome';
 @import 'slick.scss';
+@import 'components/menuzord';
 
 @import 'base/typography';
 @import 'base/images';
@@ -15,16 +16,17 @@
 @import 'base/reset';
 @import 'base/utility-classes';
 
-@import 'layout/content';
-@import 'layout/header';
-@import 'layout/footer';
-
 @import 'components/grids';
 @import 'components/ui-elements';
 @import 'components/tables';
 @import 'components/icons';
 @import 'components/buttons';
 @import 'components/forms';
+
+@import 'layout/content';
+@import 'layout/header';
+@import 'layout/footer';
+
 
 @import 'elements/el-slideshow';
 

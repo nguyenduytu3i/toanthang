@@ -20,6 +20,7 @@ var options = {
     'dest'
   ],
   browserSync: {
+    open: false,
     server: {
       baseDir: dest
     }
@@ -74,7 +75,7 @@ var fonts = {
 // js
 var js = {
   in: [
-    source + 'js/*.*',
+    source + 'js/**/*.*',
     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     './node_modules/slick-carousel/slick/slick.min.js',
     './node_modules/jssor-slider/js/jssor.slider.min.js'
