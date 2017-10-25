@@ -1,0 +1,37 @@
+{
+	"pageList": {
+		"data": [
+			{
+				"title": "UI Elements",
+				"url": "elements"
+			},
+			{
+				"title": "Home",
+				"url": "index"
+			}
+		]
+	},
+	"head": {
+		"gioi_thieu": {
+			"title": "Giới Thiệu"
+		},
+		"tin_tuc": {
+			"title": "Tin tức"
+		},
+		"san_pham": {
+			"title": "Sản phẩm"
+		},
+		"co_dong_va_nha_dau_tu": {
+			"title": "Cổ đông và nhà đầu tư"
+		},
+		"he_thong_phan_phoi": {
+			"title": "Hệ thống phân phối"
+		},
+		"tuyen_dung": {
+			"title": "Tuyển dụng"
+		},
+		"lien_he": {
+			"title": "Liên hệ"
+		}
+	}
+}

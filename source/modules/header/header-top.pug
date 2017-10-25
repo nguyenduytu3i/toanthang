@@ -1,0 +1,16 @@
+#header-top.header-top.clearfix
+    .container
+        .row
+            .col-md-4
+                .logo.logo-home.text-center
+                    a(href='#' target='_self' title='')
+                        img.img-responsive(src="/images/logo.png" alt="")
+            .col-md-8
+                .header-static.float-right
+                    // Search form
+                    form.search-form( name="search-form" action='/san-pham/tags/' method='POST')
+                        .input-group
+                            input#tag.form-control(type='text', placeholder='Nhập từ khóa tìm kiếm' name='tag')
+                            span.input-group-btn
+                                button.btn.btn-search(type='submit')
+                                    i.fa.fa-search

@@ -1,0 +1,55 @@
+include ../mixins/a-item
+include ../mixins/item-menu
+include ../mixins/box
+
+#header-menu.header-menu.clearfix
+    .header-menu-fluid.menu-sticky
+        .container
+            nav#main-menu
+                ul.ulmenu
+                    li.limenu
+                        +a-item('Giới Thiệu', '/', true)
+                        div.ulmenusub.mega-menu
+                            .grid-container
+                                .submenu-wrap
+                                    .grid.gutter-28
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                    .grid.gutter-28.mt-20
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                                        .col.five-col
+                                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                    li.limenu
+                        +a-item('Tin tức', '/contact')
+                        ul.ulmenusub.drop-menu
+                            li.limenu
+                                +a-item('Dropdown 01', '/')
+                            li.limenu
+                                +a-item('Dropdown 02', '/')
+                            li.limenu
+                                +a-item('Dropdown 03', '/')
+                    li.limenu
+                        +a-item('Sản phẩm', '/about')
+                    li.limenu
+                        +a-item('Cổ đông và nhà đầu tư', '/about')
+                    li.limenu
+                        +a-item('Hệ thống phân phối', '/about')
+                    li.limenu
+                        +a-item('Tuyển dụng', '/about')
+                    li.limenu
+                        +a-item('Liên hệ', '/about')

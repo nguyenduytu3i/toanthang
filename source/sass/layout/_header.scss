@@ -1,0 +1,212 @@
+//
+// Layout :: Header
+// --------------------------------------------------
+
+// Header Top
+.header-top {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    max-width: 234px;
+}
+
+.search-form {
+    .input-group {
+        min-width: 280px;
+        .form-control,
+        input {
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+    }
+
+    .input-group-btn {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        display: inline-block;
+        width: 40px;
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+
+        .btn,
+        &:last-child > .btn,
+        &:last-child > .btn-group {
+            margin-left: 0;
+            background: none !important;
+            &:hover {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+
+// Header Menu
+.sticking {
+    position: fixed;
+    top: 0;
+    *height: 70px;
+    z-index: 1;
+    z-index: 99999999;
+}
+
+.header-menu {
+    padding-bottom: 2px;    
+}
+
+.header-menu-fluid {
+    width: 100%;
+    border: 0;
+    background: $brand-primary;
+}
+
+.title-menu {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p {
+    &.a-menu {
+        color: $brand-primary;
+    }
+}
+
+.ulmenu {
+    margin: 0 auto;
+    position: relative;
+}
+
+.ulmenusub {
+    li {
+        float: left;
+        width: 100%;
+        margin-top: 22px;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+ul {
+
+    &.menu2 {
+        li {
+            width: auto;
+            margin-top: 5px;
+            margin-left: 0
+        }
+    }
+
+    &.menu7 {
+        li {
+            &:first-of-type {
+                width: 40%;
+            }
+            &:last-of-type {
+                width: 55%;
+            }
+        }
+    }
+}
+
+#main-menu {
+
+    > .ulmenu {
+
+        > li {
+            &.limenu {
+                float: left;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $brand-second;
+                    @include invisible(hidden);
+                    @include opacity(0);
+                    @include transition(0.5s all);
+                }
+
+                > a {
+                    color: #fff;
+                    padding: 10px 18px;
+                    float: left;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    text-align: center;
+
+                    &:hover {
+                        color: #ffe76d;
+                    }
+                }
+
+                a {
+                    img {
+                        *max-height: 22px;
+                        *min-width: 30px;
+                        margin: auto;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        border: 0;
+                        background: none;
+                    }
+                }
+
+                &:hover {
+                    position: relative;
+
+                    &:after {
+                        @include invisible(visible);
+                        @include opacity(1);
+                    }
+                }
+            }
+        }   
+    }
+
+    .ulmenusub {
+        position: absolute;
+        float: left;
+        z-index: 99999999;
+        top: calc(100% + 30px);
+        padding-top: 2px;
+        @include invisible(hidden);
+        @include opacity(0);
+        @include transition(0.5s all);;
+    }
+
+    .ulmenusub.drop-menu,
+    .submenu-wrap {
+        padding: 20px;
+        background: url(../images/bg_menu.png) repeat;
+    }
+
+    .ulmenusub.drop-menu {
+        min-width: 220px;
+    }
+
+    li {
+        &.limenu {
+            &:hover {
+                > .ulmenusub {
+                    top: 100%;
+                    @include invisible(visible);
+                    @include opacity(1);
+                }
+            }
+        }
+    }
+}

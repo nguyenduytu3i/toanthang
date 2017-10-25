@@ -1,0 +1,110 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/elements/elements
+include modules/mixins/box-list
+
+doctype html
+html
+    +head(head.gioi_thieu)
+
+    body
+        +header()
+
+        .main-container
+            section#home-slideshow.home-slideshow.clearfix
+                .container
+                    include modules/elements/el-slideshow
+            section#home-intro.home-intro.clearfix
+                .container
+                    .row
+                        .col-sm-12.col-md-12.col-lg-12
+                            p Trải qua 15 năm đổi mới và phát triển, cùng với định hướng của BLĐ và sự nỗ lực không ngừng của CBCNV, Công ty Cổ phần TOÀN THẮNG hiện đang khẳng định vị thế là Nhà sản xuất các sản phẩm Inox dân dụng và công nghiệp hàng đầu Việt Nam và Châu Á. Rất nhiều sản phẩm mang thương hiệu TOÀN THẮNG đã khẳng định chất lượng không chỉ tại thị trường Việt Nam mà còn tại rất nhiều quốc gia trên thế giới
+            section#home-categories.home-categories.clearfix
+                .container
+                    .row
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Sản phẩm nổi bật
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp1.png' alt='')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Bồn nước Inox
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp2.png' alt='')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Chậu rửa Inox
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp3.png' alt='')
+                    .row
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Bồn nhựa cao cấp
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp4.png' alt='')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Máy lọc nước
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp5.png' alt='')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Bình nước nóng
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp3.png' alt='')
+                    .row
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Bồn nhựa cao cấp
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp6.png' alt='')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Máy lọc nước
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp7.png' alt='')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Bình nước nóng
+                            .category-image
+                                a(href='#' target='_blank' title='')
+                                    img.img-responsive(src='/images/sp1.png' alt='')
+            section#home-news.home-news.clearfix
+                .container
+                    .row
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Tin tức & sự kiện
+                            +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', '/images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+                            .news-links.list-links
+                                a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
+                                a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
+                                a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
+                                a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
+                                a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
+                                a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Công nghệ & Dự án
+                            +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', '/images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+                            +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', '/images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+                            +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', '/images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+                        .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+                            .title-one
+                                h2 Công nghệ & Dự án
+
+        +footer()
+
+        script(type='text/javascript', src='js/main.js')
+
+        include modules/head/analytics

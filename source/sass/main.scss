@@ -1,0 +1,31 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/placeholders';
+@import 'abstracts/animations';
+
+@import 'vendors/bootstrap-override-variable';
+@import 'bootstrap';
+@import 'font-awesome';
+// @import 'slick';
+
+@import 'base/typography';
+@import 'base/images';
+@import 'base/global';
+@import 'base/reset';
+@import 'base/utility-classes';
+
+@import 'layout/content';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/grids';
+@import 'components/ui-elements';
+@import 'components/tables';
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/forms';
+
+@import 'elements/el-slideshow';
+
+@import 'pages/home';

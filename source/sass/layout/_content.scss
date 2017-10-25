@@ -1,0 +1,11 @@
+//
+// Layout :: Content
+// --------------------------------------------------
+
+.list-links {
+    > a,
+    > li {
+        display: block;
+        line-height: 26px;
+    }
+}
