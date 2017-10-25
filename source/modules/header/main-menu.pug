@@ -1,0 +1,76 @@
+include ../mixins/a-item
+include ../mixins/item-menu
+include ../mixins/box
+
+ul.ulmenu
+    li.limenu.is-mega-menu
+        +a-item('Giới Thiệu', '/', true)
+        div.ulmenusub.mega-menu
+            .grid-container
+                .submenu-wrap
+                    .grid.gutter-28
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                    .grid.gutter-28.mt-20
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+                        .col.five-col
+                            +box('Biển đèn LED chữ nổi', '/', 'images/thuvien.png', 'text-center')
+    li.limenu
+        +a-item('Tin tức', '/contact')
+        .ulmenusub.drop-menu
+            ul.submenu-wrap
+                li.limenu
+                    +a-item('Dropdown 01', '/')
+                li.limenu
+                    +a-item('Dropdown 02', '/')
+                li.limenu
+                    +a-item('Dropdown 03', '/')
+    li.limenu
+        +a-item('Sản phẩm', '/about')
+        .ulmenusub.drop-menu
+            ul.submenu-wrap
+                li.limenu
+                    +a-item('Chi tiet san pham', 'product.html')
+    li.limenu.is-mega-menu
+        +a-item('Cổ đông và nhà đầu tư', '/about')
+    li.limenu.is-mega-menu
+        +a-item('Hệ thống phân phối', '/about')
+    li.limenu.is-mega-menu
+        +a-item('Tuyển dụng', '/about')
+    li.limenu.is-mega-menu
+        +a-item('Liên hệ', '/about')
+        div.ulmenusub.mega-menu
+            .grid-container
+                .submenu-wrap
+                    .grid.gutter-28
+                        .col.two-col
+                            h4.heading Thong tin
+                            // Contact form
+                            form.contact-form( name="contact-form" action='/contact/' method='POST')
+                                .form-group
+                                    input.form-control(type='text', placeholder='Ho va ten' name='name')
+                                .form-group
+                                    input.form-control(type='text', placeholder='Email' name='email')
+                                .form-group
+                                    input.form-control(type='text', placeholder='So dien thoai' name='phone-number')
+                                .form-group
+                                    textarea.form-control(type='text', placeholder='Nhập noi dung' name='content')
+                                .fform-group
+                                    button.btn.btn-primary(type='submit') Gui
+                        .col.two-col
+                            iframe(frameborder="0" style="width:100%;height:250px;border:0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDPCgIglOh2FCHMwH5LN4GlVyN4-EVD3HM&zoom=17&q=Space+Needle,Seattle+WA" allowfullscreen)

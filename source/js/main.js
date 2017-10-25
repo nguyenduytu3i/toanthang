@@ -72,5 +72,28 @@
                 ($(window).scrollTop() > navHeight) ? $menu_sticky.addClass('sticking') : $menu_sticky.removeClass('sticking');
             });
         }
+
+        // Product gallery
+        if ($('.product-photo').length) {
+            
+            $('.product-photo').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.product-thumbs',
+                autoplay: true
+            });
+
+            $('.product-thumbs').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.product-photo',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true
+            });
+
+        }
     });
 })(jQuery);

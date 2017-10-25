@@ -10765,6 +10765,108 @@ button.close {
     clip: auto;
 }
 
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 span.text,
 #main-menu .ulmenu > .limenu > .abmenu {
     font-family: "utmavo" !important;
@@ -11822,9 +11924,8 @@ p.a-menu {
 }
 
 .ulmenusub li {
-    float: left;
     width: 100%;
-    margin-top: 22px;
+    margin-top: 15px;
 }
 
 .ulmenusub li p {
@@ -11845,12 +11946,26 @@ ul.menu7 li:last-of-type {
     width: 55%;
 }
 
-#main-menu > .ulmenu > li.limenu {
-    float: left;
+#main-menu {
     position: relative;
 }
 
-#main-menu > .ulmenu > li.limenu:after {
+#main-menu > .ulmenu > li.limenu {
+    position: relative;
+    display: inline-block;
+}
+
+#main-menu > .ulmenu > li.limenu > a {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#main-menu > .ulmenu > li.limenu > a:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -11866,15 +11981,6 @@ ul.menu7 li:last-of-type {
     transition: 0.5s all;
 }
 
-#main-menu > .ulmenu > li.limenu > a {
-    color: #fff;
-    padding: 10px 18px;
-    float: left;
-    font-size: 15px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 #main-menu > .ulmenu > li.limenu > a:hover {
     color: #ffe76d;
 }
@@ -11885,16 +11991,16 @@ ul.menu7 li:last-of-type {
     margin: auto;
 }
 
+#main-menu > .ulmenu > li.limenu.is-mega-menu {
+    position: static !important;
+}
+
 #main-menu > .ulmenu > li.limenu:last-child a {
     border: 0;
     background: none;
 }
 
-#main-menu > .ulmenu > li.limenu:hover {
-    position: relative;
-}
-
-#main-menu > .ulmenu > li.limenu:hover:after {
+#main-menu > .ulmenu > li.limenu:hover a:after {
     visibility: visible !important;
     opacity: 1;
     filter: alpha(opacity=100);
@@ -11903,6 +12009,7 @@ ul.menu7 li:last-of-type {
 #main-menu .ulmenusub {
     position: absolute;
     float: left;
+    left: 0;
     z-index: 99999999;
     top: calc(100% + 30px);
     padding-top: 2px;
@@ -11913,7 +12020,11 @@ ul.menu7 li:last-of-type {
     transition: 0.5s all;
 }
 
-#main-menu .ulmenusub.drop-menu,
+#main-menu .ulmenusub.drop-menu {
+    padding-top: 2px;
+}
+
+#main-menu .ulmenusub.drop-menu .submenu-wrap,
 #main-menu .submenu-wrap {
     padding: 20px;
     background: url(../images/bg_menu.png) repeat;
@@ -11928,6 +12039,10 @@ ul.menu7 li:last-of-type {
     visibility: visible !important;
     opacity: 1;
     filter: alpha(opacity=100);
+}
+
+.header-mobile .navbar-toggle .icon-bar {
+    background-color: #0c8c46;
 }
 
 .footer .title {

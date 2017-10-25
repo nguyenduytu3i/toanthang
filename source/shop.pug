@@ -1,0 +1,20 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/mixins/box-list
+
+doctype html
+html
+    +head(head.gioi_thieu)
+
+    body.shop
+        +header()
+
+        .main-container
+            
+
+        +footer()
+
+        script(type='text/javascript', src='js/main.js')
+
+        include modules/head/analytics

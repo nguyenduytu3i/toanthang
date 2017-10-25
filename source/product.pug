@@ -1,0 +1,61 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+    +head(head.gioi_thieu)
+
+    body.single-product
+        +header()
+
+        .main-container
+            .container
+                .row
+                    .col-md-9
+                        .product-single-top
+                            .product-gallery
+                                .product-photo
+                                    .item
+                                        img(src="images/product.png" alt="image")
+                                    .item
+                                        img(src="images/product.png" alt="image")
+                                    .item
+                                        img(src="images/product.png" alt="image")
+                                    .item
+                                        img(src="images/product.png" alt="image")
+                                .product-thumbs
+                                    .item
+                                        img(src="images/product-thumb.png" alt="image")
+                                    .item
+                                        img(src="images/product-thumb.png" alt="image")
+                                    .item
+                                        img(src="images/product-thumb.png" alt="image")
+                                    .item
+                                        img(src="images/product-thumb.png" alt="image")
+                        .product-single-tabs
+                            ul.nav.nav-tabs(role="tablist")
+                                li.active(role="presentation")
+                                    a(href="#product-advantage" aria-controls="product-advantage" role="tab" data-toggle="tab" aria-expanded="true") Uu diem
+                                li(role="presentation")
+                                    a(href="#product-info" aria-controls="product-info" role="tab" data-toggle="tab" aria-expanded="false") Thông số kỹ thuật
+                                li(role="presentation")
+                                    a(href="#product-setup" aria-controls="product-setup" role="tab" data-toggle="tab" aria-expanded="false") Huong dan lắp đặt
+                                li(role="presentation")
+                                    a(href="#product-process" aria-controls="product-process" role="tab" data-toggle="tab" aria-expanded="false") Dây chuyền sản xuất
+                            .tab-content
+                                #product-advantage.tab-pane.active(role="tabpanel")
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                #product-info.tab-pane(role="tabpanel")
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                #product-setup.tab-pane(role="tabpanel")
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                #product-process.tab-pane(role="tabpanel")
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    .col-md-3
+
+        +footer()
+
+        script(type='text/javascript', src='js/main.js')
+
+        include modules/head/analytics

@@ -1,11 +1,11 @@
-#header-top.header-top.clearfix
+#header-top.header-top.clearfix.hidden-xs.hidden-sm
     .container
         .row
-            .col-md-4
+            .col-sm-6.col-md-4
                 .logo.logo-home.text-center
-                    a(href='#' target='_self' title='')
-                        img.img-responsive(src="/images/logo.png" alt="")
-            .col-md-8
+                    a(href='/' target='_self' title='')
+                        img.img-responsive(src="images/logo.png" alt="")
+            .col-sm-6.col-md-8
                 .header-static.float-right
                     // Search form
                     form.search-form( name="search-form" action='/san-pham/tags/' method='POST')
