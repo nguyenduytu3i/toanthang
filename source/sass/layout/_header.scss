@@ -264,6 +264,9 @@ p {
       }
     }
 
+    @include respond-to('tablet-and-up') {
+      display: flex!important;
+    }
 
     @include respond-to('desktop-and-down') {
       li {
@@ -349,13 +352,15 @@ p {
     padding: 0;
 
     img {
-      margin: 0 auto;
+      margin: 15px auto;
+      max-width: 150px;
     }
   }
 }
 
 .megamenu {
-  
+  overflow-x: hidden;
+
   .box {
     margin-bottom: 18px;
   }
@@ -402,6 +407,10 @@ p {
     max-height: 320px;
     overflow-y: auto;
   }
+}
+
+.menuzord-menu > li > .megamenu {
+  padding-bottom: 15px;
 }
 
 .menuzord-menu > li > .megamenu .megamenu-row.new {
@@ -472,6 +481,10 @@ p {
   .owl-stage-outer {
     width: calc(100% + 1px);  
   }
+
+  .box .box-title {
+    min-height: 70px;
+  }
 }
 
 .owl-nav {
@@ -498,6 +511,40 @@ p {
   @include respond-to('phone-and-down') {
     .two-col {
       width: 100%!important;
+    }
+  }
+}
+
+.flex-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -14px;
+  margin-right: -14px;
+
+  .item {
+    width: 20%;
+    padding: 0 14px;
+    position: relative;
+
+    .box {
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @include respond-to('tablet-and-down') {
+    .item {
+      width: 33.3333%;
+    }
+  }
+
+  @include respond-to('smallphone-and-down') {
+    .item {
+      width: 100%;
     }
   }
 }
