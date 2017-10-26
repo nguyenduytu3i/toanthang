@@ -2,15 +2,6 @@
 // Abstracts :: Typography
 // --------------------------------------------------
 
-span.text,
-#main-menu .ulmenu > .limenu > .abmenu {
-  font-family: "utmavo" !important;
-}
-
-a, h1, h2, h3, h4, h5, h6, p, span {
-  font-family: Arial, sans-serif;
-}
-
 .title-one,
 .title-one a,
 .title-one span,
@@ -31,7 +22,6 @@ a, h1, h2, h3, h4, h5, h6, p, span {
 .title-two h4,
 .footer .title span {
   color: #000;
-  font-family: 'Oswald', sans-serif !important;
   text-transform: uppercase;
   font-weight: normal;
 }

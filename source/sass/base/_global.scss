@@ -2,15 +2,10 @@
 // Base :: Global
 // --------------------------------------------------
 
-@font-face {
-  font-family: 'utmavo';
-  src: url('../fonts/utmavo.eot');
-  src: local('utmavo'), url('../fonts/utmavo.woff') format('woff'), url('../fonts/utmavo.ttf') format('truetype');
-}
-
 body {
   // font-family: $font-family-primary;
   background-color: $white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 1200px) {

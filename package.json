@@ -48,5 +48,8 @@
     "pug": "^2.0.0-rc.4",
     "run-sequence": "^2.2.0",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.2.0"
   }
 }

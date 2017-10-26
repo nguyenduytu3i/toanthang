@@ -57,7 +57,8 @@ var scss = {
     includePaths: [
       './node_modules/bootstrap-sass/assets/stylesheets',
       './node_modules/font-awesome/scss/',
-      './node_modules/slick-carousel/slick/'
+      './node_modules/slick-carousel/slick/',
+      './node_modules/owl.carousel/src/scss'
     ]
   }
 };
@@ -78,7 +79,8 @@ var js = {
     source + 'js/**/*.*',
     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     './node_modules/slick-carousel/slick/slick.min.js',
-    './node_modules/jssor-slider/js/jssor.slider.min.js'
+    './node_modules/jssor-slider/js/jssor.slider.min.js',
+    './node_modules/owl.carousel/dist/owl.carousel.min.js'
   ],
   out: dest + 'js/'
 };

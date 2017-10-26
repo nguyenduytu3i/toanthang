@@ -322,6 +322,10 @@ p {
 
 .megamenu {
 
+  .box {
+    margin-bottom: 28px;
+  }
+
   .title-new {
     text-transform: uppercase;
   }
@@ -348,9 +352,15 @@ p {
     }
 
     &.all {
-      text-align: right;
-      font-size: 24px;
+      font-size: 16px;
       color: $brand-primary;
+      line-height: 24px;
+      justify-content: flex-end;
+
+      i {
+        font-size: 24px;
+        margin-left: 10px;
+      }
     }
   }
 
@@ -361,23 +371,40 @@ p {
 }
 
 .menuzord-menu > li > .megamenu .megamenu-row.new {
-  .col4 {
-    &:nth-of-type(1) {
-      margin: 0;
-      padding-right: 15px;
-    }
+  display: flex;
+  justify-content: space-between;
 
-    &:nth-of-type(2) {
-      margin: 0;
-      padding: 0 15px;
-      border-right: 1px solid $brand-second;
-      border-left: 1px solid $brand-second;
-    }
+  @include respond-to('tablet-and-down') {
+    display: block;
 
-    &:nth-of-type(3) {
-      margin: 0;
-      padding: 0;
-      padding-left: 15px;
+    .col4 {
+      display: inline-block;
+      float: left;
+      width: 100%!important;
+      margin: 0!important;
+
+      .item-new {
+        width: 50%;
+        display: inline-flex;
+        float: left;
+      }
+    }
+  }
+
+  @include respond-to('phone-and-down') {
+    display: block;
+
+    .col4 {
+      display: inline-block;
+      float: left;
+      width: 100%!important;
+      margin: 0!important;
+
+      .item-new {
+        width: 100%;
+        display: inline-flex;
+        float: left;
+      }
     }
   }
 }
@@ -404,4 +431,39 @@ p {
 
 .menuzord i {
   font-family: FontAwesome!important;
+}
+
+.owl-product {
+
+  .owl-stage-outer {
+    width: calc(100% + 1px);  
+  }
+}
+
+.owl-nav {
+  display: block;
+  width: 100%;
+  text-align: right;
+
+  .owl-next, .owl-prev {
+    display: inline-block;
+    color: $brand-primary;
+
+    i {
+      font-size: 24px;
+      margin: 0 3px;
+    }
+
+    &:hover {
+      color: $brand-second;
+    }
+  }
+}
+
+.megamenu.form-contact {
+  @include respond-to('phone-and-down') {
+    .two-col {
+      width: 100%!important;
+    }
+  }
 }

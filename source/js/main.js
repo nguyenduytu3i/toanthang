@@ -3,6 +3,7 @@
 //=require extention/menuzord.js
 //=require slick-carousel/slick/slick.min.js
 //=require jssor-slider/js/jssor.slider.min.js
+//=require owl.carousel/dist/owl.carousel.min.js
 
 ;(function($) {
 
@@ -74,6 +75,15 @@
       });
     }
 
+    //Main slider
+    $('#js-slider-main').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
+
     // Product gallery
     if ($('.product-photo').length) {
       
@@ -102,5 +112,30 @@
         indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
       });
     }
+
+
+
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin: 28,
+      nav: true,
+      navText: ["<i class='fa fa-caret-left'></i>","<i class='fa fa-caret-right'></i>"],
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:5,
+              nav:true,
+              loop:false
+          }
+      }
+    })
   });
 })(jQuery);
