@@ -3,6 +3,7 @@
 //=require extention/menuzord.js
 //=require slick-carousel/slick/slick.min.js
 //=require jssor-slider/js/jssor.slider.min.js
+//=require owl.carousel/dist/owl.carousel.min.js
 
 ;(function($) {
 
@@ -102,5 +103,37 @@
         indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
       });
     }
+
+
+    //Main slider
+    if ($('#js-slider-main').length) {
+      $('#js-slider-main').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    }
+
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin: 18,
+      nav: true,
+      navText: ["<i class='fa fa-caret-left'></i>","<i class='fa fa-caret-right'></i>"],
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5,
+          loop:false
+        }
+      }
+    });
   });
 })(jQuery);

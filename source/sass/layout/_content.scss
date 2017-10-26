@@ -228,6 +228,11 @@
   border: 1px solid #dc6526;
 
   .product-photo {
+    .item {
+      img {
+        width: 100%;
+      }
+    }
     &.slick-slider {
       .slick-arrow {
         &.slick-prev,
@@ -344,6 +349,17 @@
   }
 }
 
+// Blog
+.box-grid {
+  &.news-block {
+    .box-grid-img {
+      img {
+        width: 100%;
+      }
+    }
+  } 
+}
+
 // Responsive
 @media (max-width: 993px) {
   .five-col {
@@ -420,5 +436,135 @@
 
   .xs-full {
     width: 100% !important;
+  }
+}
+
+//slider
+.slider-main {
+  position: relative;
+
+  .slick-slide img {
+    max-width: 100%;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    z-index: 9;
+  }
+
+  .slick-next {
+    right: 25px!important;
+  }
+  
+  .slick-prev {
+    left: 25px!important;
+  }
+
+  .slick-prev::before, .slick-next::before {
+    font-family: 'FontAwesome';
+    font-size: 36px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-prev::before {
+    content: "\f104";
+  }
+
+  .slick-next::before {
+    content: "\f105";
+  }
+
+  .slick-prev, .slick-next {
+    &:hover:before {
+      color: #dc6526;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+
+  .slick-dots li button::before {
+    font-family: 'FontAwesome';
+    font-size: 35px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .75;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+  }
+
+  .slick-dots li button:hover:before {
+    opacity: 1;
+  }
+
+  .slick-dots li.slick-active button::before {
+    opacity: 1;
+    color: #dc6526;
+  }
+}
+
+
+// Product 
+.category-image {
+  a {
+    display: block;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }

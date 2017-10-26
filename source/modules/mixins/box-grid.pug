@@ -1,0 +1,10 @@
+mixin box-grid(title, url, img, cl, content)
+  div(class=cl != '' ? 'box-grid ' + cl : 'box-grid')
+    if img
+      a(class='box-grid-img', href=url, title='')
+        img.img-responsive(src=img, alt="")
+    if title
+      h4.box-grid-title
+        a(href=url, title='')= title
+    if content
+      p.box-grid-info.mt-10= content

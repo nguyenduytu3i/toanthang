@@ -10,7 +10,7 @@ mixin header(active)
             li(class=active == 'gioi-thieu' ? 'active' : '')
               a(href='index.html') Giới Thiệu
               .megamenu
-                .grid.gutter-28
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -41,7 +41,7 @@ mixin header(active)
                         img.img-responsive(src='images/thuvien.png', alt='')
                       h4.box-title
                         a(href='#', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -73,7 +73,7 @@ mixin header(active)
                       h4.box-title
                         a(href='#', title='') Biển đèn LED chữ nổi
             li(class=active == 'tin-tuc' ? 'active' : '')
-              a(href='tin-tuc.html') Tin tức
+              a(href='blog.html') Tin tức
               .megamenu
                .megamenu-row.new
                 .col4
@@ -147,72 +147,77 @@ mixin header(active)
             li(class=active == 'san-pham' ? 'active' : '')
               a(href='shop.html') Sản phẩm
               .megamenu
-                .grid.gutter-28
-                  .col.five-col
+                .owl-carousel.owl-product
+                  .item
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Bồn công nghiệp
-                  .col.five-col
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Bồn nước inox
-                  .col.five-col
+                  .item
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Bồn nhựa
-                  .col.five-col
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Chậu rửa bat inox
-                  .col.five-col
+                  .item
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Máy nước nóng năng lượng mặt trời
-                .grid.gutter-28.mt-20
-                  .col.five-col
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Máy lọc nước R.O
-                  .col.five-col
+                  .item
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Máy nước nóng
-                  .col.five-col
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Vòi rửa INOX
-                  .col.five-col
+                  .item
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Chậu rửa bát INOX
-                  .col.five-col
                     .box.text-center
                       a.box-img(href='category.html', title='')
                         img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
                       h4.box-title
                         a(href='category.html', title='') Máy nước nóng năng lượng mặt trời
+                  .item
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Máy nước nóng năng lượng mặt trời
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Máy lọc nước R.O
             li(class=active == 'co-dong-va-nha-dau-tu' ? 'active' : '')
               a(href='co-dong-va-nha-dau-tu.html') Cổ đông và nhà đầu tư
               .megamenu
-                .grid.gutter-28
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -243,7 +248,7 @@ mixin header(active)
                         img.img-responsive(src='images/thuvien.png', alt='')
                       h4.box-title
                         a(href='#', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -277,7 +282,7 @@ mixin header(active)
             li(class=active == 'he-thong-phan-phoi' ? 'active' : '')
               a(href='he-thong-phan-phoi.html') Hệ thống phân phối
               .megamenu
-                .grid.gutter-28
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -308,7 +313,7 @@ mixin header(active)
                         img.img-responsive(src='images/thuvien.png', alt='')
                       h4.box-title
                         a(href='#', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -342,7 +347,7 @@ mixin header(active)
             li(class=active == 'tuyen-dung' ? 'active' : '')
               a(href='tuyen-dung.html') Tuyển dụng
               .megamenu
-                .grid.gutter-28
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -373,7 +378,7 @@ mixin header(active)
                         img.img-responsive(src='images/thuvien.png', alt='')
                       h4.box-title
                         a(href='#', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
+                .grid.gutter-18
                   .col.five-col
                     .box.text-center
                       a.box-img(href='#', title='')
@@ -407,7 +412,7 @@ mixin header(active)
             li(class=active == 'lien-he' ? 'active' : '')
               a(href='lien-he.html') Liên hệ
               .megamenu
-                .grid.gutter-28
+                .grid.gutter-18
                   .col.two-col
                     h4.heading.color Thong tin
                     // Contact form
