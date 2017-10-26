@@ -1,10 +1,10 @@
 mixin box(title, url, img, cl, content)
-    div(class=cl != '' ? 'box ' + cl : 'box')
-        if img
-            a(class='box-img', href=url, target='_blank', title='')
-                img.img-responsive(src=img, alt="")
-        if title
-            h4.box-title
-                a(href=url, target='_blank', title='')= title
-        if content
-            p.box-info= content
+  div(class=cl != '' ? 'box ' + cl : 'box')
+    if img
+      a(class='box-img', href=url, target='_blank', title='')
+        img.img-responsive(src=img, alt="")
+    if title
+      h4.box-title
+        a(href=url, target='_blank', title='')= title
+    if content
+      p.box-info= content

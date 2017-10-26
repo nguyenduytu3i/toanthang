@@ -6,7 +6,7 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 indent_style = space
-indent_size = 4
+indent_size = 2
 
 # json file
 [*.json]
@@ -20,5 +20,5 @@ indent_size = 2
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,py,html,php,less,scss,css,phtml}]
+[*.{js,py,pug,html,php,less,scss,css,phtml}]
 charset = utf-8

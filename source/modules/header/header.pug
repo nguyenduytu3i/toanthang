@@ -1,5 +1,426 @@
-mixin header()
-    header.header
-        include header-mobile
-        include header-top
-        include header-menu
+mixin header(active)
+  header.header
+    include header-top
+    .menu-wrapper.menu-sticky
+      .container
+        #menuzord.menuzord.relative
+          a.menuzord-brand(href='javascript:void(0)').hidden-lg.hidden-md
+            img(src='images/logo.png')
+          ul.menuzord-menu
+            li(class=active == 'gioi-thieu' ? 'active' : '')
+              a(href='index.html') Giới Thiệu
+              .megamenu
+                .grid.gutter-28
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                .grid.gutter-28.mt-20
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+            li(class=active == 'tin-tuc' ? 'active' : '')
+              a(href='tin-tuc.html') Tin tức
+              .megamenu
+               .megamenu-row.new
+                .col4
+                  h4.title-new Type Of News
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#').all
+                    i.fa.fa-caret-right
+                .col4
+                  h4.title-new Type Of News
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                .col4
+                  h4.title-new Type Of News
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  a.item-new(href='#')
+                    img(src="images/sp1.png")
+                    .info
+                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            li(class=active == 'san-pham' ? 'active' : '')
+              a(href='shop.html') Sản phẩm
+              .megamenu
+                .grid.gutter-28
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Bồn công nghiệp
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Bồn nước inox
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Bồn nhựa
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Chậu rửa bat inox
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Máy nước nóng năng lượng mặt trời
+                .grid.gutter-28.mt-20
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Máy lọc nước R.O
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Máy nước nóng
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Vòi rửa INOX
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Chậu rửa bát INOX
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='category.html', title='')
+                        img.img-responsive(src='images/menu-category-bon-inox-ngang.jpg', alt='')
+                      h4.box-title
+                        a(href='category.html', title='') Máy nước nóng năng lượng mặt trời
+            li(class=active == 'co-dong-va-nha-dau-tu' ? 'active' : '')
+              a(href='co-dong-va-nha-dau-tu.html') Cổ đông và nhà đầu tư
+              .megamenu
+                .grid.gutter-28
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                .grid.gutter-28.mt-20
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+            li(class=active == 'he-thong-phan-phoi' ? 'active' : '')
+              a(href='he-thong-phan-phoi.html') Hệ thống phân phối
+              .megamenu
+                .grid.gutter-28
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                .grid.gutter-28.mt-20
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+            li(class=active == 'tuyen-dung' ? 'active' : '')
+              a(href='tuyen-dung.html') Tuyển dụng
+              .megamenu
+                .grid.gutter-28
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                .grid.gutter-28.mt-20
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+                  .col.five-col
+                    .box.text-center
+                      a.box-img(href='#', title='')
+                        img.img-responsive(src='images/thuvien.png', alt='')
+                      h4.box-title
+                        a(href='#', title='') Biển đèn LED chữ nổi
+            li(class=active == 'lien-he' ? 'active' : '')
+              a(href='lien-he.html') Liên hệ
+              .megamenu
+                .grid.gutter-28
+                  .col.two-col
+                    h4.heading.color Thong tin
+                    // Contact form
+                    form.contact-form( name="contact-form" action='/contact/' method='POST')
+                      .form-group
+                        input.form-control(type='text', placeholder='Ho va ten' name='name')
+                      .form-group
+                        input.form-control(type='text', placeholder='Email' name='email')
+                      .form-group
+                        input.form-control(type='text', placeholder='So dien thoai' name='phone-number')
+                      .form-group
+                        textarea.form-control(type='text', placeholder='Nhập noi dung' name='content')
+                      .form-group
+                        button.btn.btn-primary(type='submit') Gui
+                  .col.two-col
+                    iframe(frameborder="0" style="width:100%;height:374px;border:0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDPCgIglOh2FCHMwH5LN4GlVyN4-EVD3HM&zoom=17&q=Space+Needle,Seattle+WA" allowfullscreen)

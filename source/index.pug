@@ -1,438 +1,15 @@
 include modules/head/head
 include modules/header/header
 include modules/footer/footer
-include modules/elements/elements
 include modules/mixins/box-list
+include modules/mixins/shop-box
 
 doctype html
 html
   +head(head.gioi_thieu)
 
   body
-    +header()
-    .menu-wrapper.menu-sticky
-      .container
-        #menuzord.menuzord.relative
-          a.menuzord-brand(href='javascript:void(0)').hidden-lg.hidden-md
-            img(src='images/logo.png')
-          ul.menuzord-menu
-            li.active
-              a(href='#') Giới Thiệu
-              .megamenu
-                .grid.gutter-28
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-            li
-              a(href='#') Tin tức
-              .megamenu
-               .megamenu-row.new
-                .col4
-                  h4.title-new Type Of News
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#').all
-                    i.fa.fa-caret-right
-                .col4
-                  h4.title-new Type Of News
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                .col4
-                  h4.title-new Type Of News
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  a.item-new(href='#')
-                    img(src="images/sp1.png")
-                    .info
-                      h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            li
-              a(href='#') Sản phẩm
-              .megamenu
-                .grid.gutter-28
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-            li
-              a(href='#') Cổ đông và nhà đầu tư
-              .megamenu
-                .grid.gutter-28
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-            li
-              a(href='#') Hệ thống phân phối
-              .megamenu
-                .grid.gutter-28
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-            li
-              a(href='#') Tuyển dụng
-              .megamenu
-                .grid.gutter-28
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                .grid.gutter-28.mt-20
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-                  .col.five-col
-                    .box.text-center
-                      a.box-img(href='/', target='_blank', title='')
-                        img.img-responsive(src='images/thuvien.png', alt='')
-                      h4.box-title
-                        a(href='/', target='_blank', title='') Biển đèn LED chữ nổi
-            li
-              a(href='#') Liên hệ
-              .megamenu
-                .grid.gutter-28
-                  .col.two-col
-                    h4.heading.color Thong tin
-                    // Contact form
-                    form.contact-form( name="contact-form" action='/contact/' method='POST')
-                      .form-group
-                        input.form-control(type='text', placeholder='Ho va ten' name='name')
-                      .form-group
-                        input.form-control(type='text', placeholder='Email' name='email')
-                      .form-group
-                        input.form-control(type='text', placeholder='So dien thoai' name='phone-number')
-                      .form-group
-                        textarea.form-control(type='text', placeholder='Nhập noi dung' name='content')
-                      .fform-group
-                        button.btn.btn-primary(type='submit') Gui
-                  .col.two-col
-                    iframe(frameborder="0" style="width:100%;height:374px;border:0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDPCgIglOh2FCHMwH5LN4GlVyN4-EVD3HM&zoom=17&q=Space+Needle,Seattle+WA" allowfullscreen)
+    +header('gioi-thieu')
     .main-container
       section#home-slideshow.home-slideshow.clearfix
         .container
@@ -442,69 +19,31 @@ html
           .row
             .col-sm-12.col-md-12.col-lg-12
               p Trải qua 15 năm đổi mới và phát triển, cùng với định hướng của BLĐ và sự nỗ lực không ngừng của CBCNV, Công ty Cổ phần TOÀN THẮNG hiện đang khẳng định vị thế là Nhà sản xuất các sản phẩm Inox dân dụng và công nghiệp hàng đầu Việt Nam và Châu Á. Rất nhiều sản phẩm mang thương hiệu TOÀN THẮNG đã khẳng định chất lượng không chỉ tại thị trường Việt Nam mà còn tại rất nhiều quốc gia trên thế giới
-      section#home-categories.home-categories.clearfix
+      section#home-categories.home-categories.mb-30.clearfix
         .container
           .row
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Sản phẩm nổi bật
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp1.png' alt='')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Bồn nước Inox
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp2.png' alt='')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Chậu rửa Inox
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp3.png' alt='')
-          .row
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Bồn nhựa cao cấp
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp4.png' alt='')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Máy lọc nước
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp5.png' alt='')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Bình nước nóng
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp3.png' alt='')
-          .row
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Bồn nhựa cao cấp
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp6.png' alt='')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Máy lọc nước
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp7.png' alt='')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
-              .title-one
-                h2 Bình nước nóng
-              .category-image
-                a(href='#' target='_blank' title='')
-                  img.img-responsive(src='images/sp1.png' alt='')
-      section#home-news.home-news.clearfix
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Sản phẩm nổi bật', 'category.html', 'images/category-may-nang-luong.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Bồn nước Inox', 'category.html', 'images/category-bon-nuoc-inox.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Chậu rửa Inox', 'category.html', 'images/category-chau-rua-inox.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Bồn nhựa cao cấp', 'category.html', 'images/category-bon-nhua-cao-cap.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Máy lọc nước', 'category.html', 'images/category-may-loc-nuoc.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Bình nước nóng', 'category.html', 'images/category-binh-nuoc-nong.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Máy năng lượng', 'category.html', 'images/category-may-nang-luong.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Bình nước nóng', 'category.html', 'images/category-binh-nuoc-nong.png', '', '', false)
+            .xs-full.col-xs-6.col-sm-6.col-md-6.col-lg-4.mb-30
+              +category-box('Bình nước nóng', 'category.html', 'images/category-binh-nuoc-nong.png', '', '', false)
+      section#home-news.home-news.mb-30.clearfix
         .container
           .row
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+            .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
               .title-one
                 h2 Tin tức & sự kiện
               +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
@@ -515,18 +54,21 @@ html
                 a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
                 a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
                 a(href='#' target='_blank' title='') Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+            .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
               .title-one
                 h2 Công nghệ & Dự án
               +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
               +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
               +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4.mb-20
+            .col-xs-12.col-sm-12.col-md-12.col-lg-4.mb-20
               .title-one
                 h2 Công nghệ & Dự án
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
 
     +footer()
 
     script(type='text/javascript', src='js/main.js')
 
-    include modules/head/analytics
+    // include modules/head/analytics

@@ -1,0 +1,13 @@
+mixin pagination(cl)
+  nav(class=cl ? 'pagination-wrapper ' + cl : 'pagination-wrapper')
+    ul.pagination
+      li.active
+        a(href='#') 1
+      li
+        a(href='#') 2
+      li
+        span ...
+      li
+        a(href='#') 7
+      li
+        a(href='#') 8

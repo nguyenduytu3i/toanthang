@@ -1,0 +1,43 @@
+// Category image
+mixin category-featured-image(img, name, content)
+  .featured-image
+    if img
+      img.img-responsive(src=img, alt="")
+    if name || content
+      .featured-image-content
+        if name
+          h2= name
+        if content
+          .category-info= content
+
+// Category Box
+mixin category-box(name, url, img, cl, content, enable_url_name)
+  div(class=cl != '' ? 'category-item ' + cl : 'category-item')
+    if name
+      h2.category-name.title-one
+        if enable_url_name
+          a(href=url)
+            span= name
+        else
+          span= name
+    if img
+      .category-image
+        a(href=url)
+          img.img-responsive(src=img, alt="")
+    if content
+      .category-info= content
+
+// Product Box
+mixin product-box(name, url, img, content)
+  .product.mobile-100.col-xs-6.col-sm-6.col-md-4.col-lg-4
+    .product-inner
+      if img
+        a(class='product-image', href=url)
+          img.img-responsive(src=img, alt="")
+      if name || content
+        .product-content
+          if name
+            h4.product-name
+              a(href=url)= name
+          if content
+            .product-info= content

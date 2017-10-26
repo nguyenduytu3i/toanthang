@@ -1,52 +1,56 @@
+include ../mixins/item-menu
+
 .footer-main
-    .container
-        .title-one-full
-            h2 &nbsp;
-        .row
-            .col-xs-12.col-sm-3.col-md-3.col-lg-3
-                .block.footer-menu
-                    h4.title
-                        span Giới thiệu
-                    ul.menu
-                        +item-menu('Giới thiệu chung', '#')
-                        +item-menu('Tầm nhìn & sứ mệnh', '#')
-                        +item-menu('Nhà máy', '#')
-                        +item-menu('Ban Lãnh Đạo', '#')
-                        +item-menu('Giải thưởng', '#')
-                        +item-menu('Sơ đồ tổ chức', '#')
-            .col-xs-12.col-sm-3.col-md-3.col-lg-3
-                .block.footer-menu
-                    h4.title
-                        span Sản phẩm
-                    ul.menu
-                        +item-menu('Giới thiệu chung', '#')
-                        +item-menu('Tầm nhìn & sứ mệnh', '#')
-                        +item-menu('Nhà máy', '#')
-                        +item-menu('Ban Lãnh Đạo', '#')
-                        +item-menu('Giải thưởng', '#')
-                        +item-menu('Sơ đồ tổ chức', '#')
-            .col-xs-12.col-sm-2.col-md-2.col-lg-2
-                .block.footer-menu
-                    h4.title
-                        span Sản phẩm
-                    ul.menu
-                        +item-menu('Giới thiệu chung', '#')
-                        +item-menu('Tầm nhìn & sứ mệnh', '#')
-                        +item-menu('Nhà máy', '#')
-                        +item-menu('Ban Lãnh Đạo', '#')
-                        +item-menu('Giải thưởng', '#')
-                        +item-menu('Sơ đồ tổ chức', '#')
-            .col-xs-12.col-sm-4.col-md-4.col-lg-4
-                .block.footer-about
-                    img.footer-logo.img-responsive(src="images/logo.png" alt="")
-                    .about-content
-                        .address
-                            strong CÔNG TY CỔ PHẦN TOÀN THẮNG <br/>
-                            abbr(title="Văn phòng") Văn phòng:
-                            | Tầng 7, Tòa nhà số 8 Quang Trung, Quận Hà Đông, Hà Nội <br/>
-                            abbr(title="Điện thoại") Điện thoại:
-                            | (04) 66 530 666 <br/>
-                            abbr(title="Fax") Fax:
-                            | (04) 66 530 999 <br/>
-                            abbr(title="Văn phòng") Email:
-                            | info@toanthang.com.vn <br/>
+  .container
+      .title-one-full
+        h2 &nbsp;
+      .row
+        .fmain-col.col-xs-12.col-sm-6.col-md-3.col-lg-3
+          .block.footer-menu
+            h4.title
+              span Giới thiệu
+            ul.menu
+              +item-menu('Giới thiệu chung', '#')
+              +item-menu('Tầm nhìn & sứ mệnh', '#')
+              +item-menu('Nhà máy', '#')
+              +item-menu('Ban Lãnh Đạo', '#')
+              +item-menu('Giải thưởng', '#')
+              +item-menu('Sơ đồ tổ chức', '#')
+        .fmain-col.col-xs-12.col-sm-6.col-md-3.col-lg-3
+          .block.footer-menu
+              h4.title
+                span Sản phẩm
+              ul.menu
+                +item-menu('Giới thiệu chung', '#')
+                +item-menu('Tầm nhìn & sứ mệnh', '#')
+                +item-menu('Nhà máy', '#')
+                +item-menu('Ban Lãnh Đạo', '#')
+                +item-menu('Giải thưởng', '#')
+                +item-menu('Sơ đồ tổ chức', '#')
+        .fmain-col.col-xs-12.col-sm-6.col-md-2.col-lg-2
+          .block.footer-menu
+            h4.title
+              span Sản phẩm
+            ul.menu
+              +item-menu('Giới thiệu chung', '#')
+              +item-menu('Tầm nhìn & sứ mệnh', '#')
+              +item-menu('Nhà máy', '#')
+              +item-menu('Ban Lãnh Đạo', '#')
+              +item-menu('Giải thưởng', '#')
+              +item-menu('Sơ đồ tổ chức', '#')
+        .fmain-col.col-xs-12.col-sm-6.col-md-4.col-lg-4
+          .block.footer-about
+            img.footer-logo.img-responsive(src="images/logo.png" alt="")
+            .about-content
+              .address
+                strong CÔNG TY CỔ PHẦN TOÀN THẮNG <br/>
+                abbr(title="Văn phòng") Văn phòng:
+                | Tầng 7, Tòa nhà số 8 Quang Trung, Quận Hà Đông, Hà Nội <br/>
+                abbr(title="Văn phòng") Nhà máy:
+                | Km3, quốc lộ 2, phường Phúc Thắng, thị xã Phúc Yên, tỉnh Vĩnh Phúc <br/>
+                abbr(title="Điện thoại") Điện thoại:
+                | 0466530666 * 
+                abbr(title="Fax") Fax:
+                | 0466530999 <br/>
+                abbr(title="Văn phòng") Email:
+                | info@toanthang.com.vn <br/>

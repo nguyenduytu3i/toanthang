@@ -80,26 +80,27 @@
       $('.product-photo').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
         fade: true,
         asNavFor: '.product-thumbs',
         autoplay: true
       });
 
       $('.product-thumbs').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.product-photo',
         dots: false,
-        centerMode: true,
+        arrows: false,
         focusOnSelect: true
       });
 
     }
 
-    jQuery("#menuzord").menuzord({
-      indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
-      indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
-    });
+    if ($('#menuzord').length) {
+      $("#menuzord").menuzord({
+        indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
+        indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
+      });
+    }
   });
 })(jQuery);

@@ -2,67 +2,113 @@
 // Layout :: Footer
 // --------------------------------------------------
 .footer {
-    .title {
-        font-weight: normal;
-        margin-bottom: 10px;
-    }
+  font-style: italic;
+
+  .title {
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+
+  .footer-about strong {
+    font-style: normal;
+  }
 }
 
 // Footer main
 .footer-main {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .menu,
+  .about-content {
+    padding-left: 8px;
+  }  
+}
+
+.fmain-col {
+  padding-top: 7px;
+  padding-bottom: 25px;
 }
 
 .footer-menu {
-    ul {
-        li {
-            line-height: 20px;
-            margin-bottom: 10px;
-        }
+  ul {
+    li {
+      line-height: 20px;
+      margin-bottom: 10px;
     }
+  }
 }
 
 .footer-logo {
-    max-width: 70%;
-    margin-bottom: 18px;
+  max-width: 70%;
+  margin-bottom: 10px;
 }
 
 .footer-about {
-    font-size: 16px;
-    font-style: italic;
+  line-height: 22px;
 
-    strong {
-        text-transform: uppercase;
-    }
+  strong {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  abbr {
+    font-weight: bold;
+    border: 0 !important;
+  }
 }
 
 // Footer copyright
 .footer-copyright {
-    font-size: 12px;
-    color: #fff;
-    font-weight: bold;
-    padding-top: 12px;
-    padding-bottom: 8px;
-    background: $brand-primary;
-    p {
-        margin-bottom: 0;
-    }
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: $brand-primary;
+  p {
+    margin-bottom: 0;
+  }
 
-    .copyright {
-        line-height: 20px;
-    }
+  .copyright {
+    line-height: 28px;
+  }
 }
 
 .social {
-    li {
-        a {
-            font-size: 22px;
-            color: #fff;
-            line-height: 20px;
-            &:hover {
-                opacity: 0.7;
-            }
-        }
+  li {
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      width: 28px;
+      height: 28px;
+      line-height: 26px;
+      display: inline-block;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      @include transition(all 0.5s);
+
+      &:hover {
+        color: $brand-primary;
+        border: 1px solid #fff;
+        background: #fff;
+      }
     }
+  }
+
+  &.list-inline {
+    > li {
+      margin: 0 !important;
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+
+      &:first-child {
+        padding-left: 0 !important;
+      }
+
+      &:last-child {
+        padding-right: 0 !important;
+      }
+    }
+  }
 }

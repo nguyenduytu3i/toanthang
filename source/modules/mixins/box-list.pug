@@ -1,13 +1,13 @@
 mixin box-list(title, url, img, cl, content)
-    div(class=cl != '' ? 'box-list ' + cl : 'box-list')
-        .media
-            if img
-                .media-left
-                    a(class='box-list-img', href=url, target='_blank', title='')
-                        img.img-responsive(src=img, alt="")
-            if title
-                .media-body
-                    h4.box-list-title
-                        a(href=url, target='_blank', title='')= title
-        if content
-            p.box-list-info.mt-10= content
+  div(class=cl != '' ? 'box-list ' + cl : 'box-list')
+    .media
+      if img
+        .media-left
+          a(class='box-list-img', href=url, target='_blank', title='')
+            img.img-responsive(src=img, alt="")
+      if title
+        .media-body
+          h4.box-list-title
+            a(href=url, target='_blank', title='')= title
+    if content
+      p.box-list-info.mt-10= content
