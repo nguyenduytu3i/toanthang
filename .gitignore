@@ -5,6 +5,7 @@
 
 # production
 /dest
+dest/
 
 # misc
 .DS_Store
