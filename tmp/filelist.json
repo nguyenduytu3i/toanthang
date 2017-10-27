@@ -23,6 +23,7 @@
   "source/images/cd-07.png",
   "source/images/cd-08.png",
   "source/images/cd-09.png",
+  "source/images/facebook.png",
   "source/images/gt-01.png",
   "source/images/gt-010.png",
   "source/images/gt-02.png",
@@ -33,9 +34,11 @@
   "source/images/gt-07.png",
   "source/images/gt-08.png",
   "source/images/gt-09.png",
+  "source/images/instagram.png",
   "source/images/logo.png",
   "source/images/menu-category-bon-inox-ngang.jpg",
   "source/images/nw1.png",
+  "source/images/phone.png",
   "source/images/product-01.jpg",
   "source/images/product-02.jpg",
   "source/images/product-03.jpg",
@@ -81,5 +84,7 @@
   "source/images/tp-07.png",
   "source/images/tp-08.png",
   "source/images/tp-09.png",
-  "source/images/uk.png"
+  "source/images/twitter.png",
+  "source/images/uk.png",
+  "source/images/youtube.png"
 ]
