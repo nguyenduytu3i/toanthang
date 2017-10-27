@@ -426,8 +426,13 @@ p {
 
   @include respond-to('tablet-and-down') {
     .menu-container {
+      display: inline-block;
       padding: 5px 0;
       background-color: #fff;
+    }
+
+    .menuzord-menu > li > .megamenu {
+      padding-bottom: 0;
     }
 
     &.sticking {
