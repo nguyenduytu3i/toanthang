@@ -5,6 +5,7 @@
   font-style: italic;
 
   .title {
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
     margin-bottom: 10px;
@@ -58,9 +59,9 @@
 
 // Footer copyright
 .footer-copyright {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
-  font-weight: bold;
+  font-weight: normal;
   padding-top: 10px;
   padding-bottom: 10px;
   background: $brand-primary;

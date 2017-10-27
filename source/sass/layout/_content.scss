@@ -10,6 +10,23 @@
   }
 }
 
+.news-block {
+  h4,
+  .box-list-title {
+    font-size: 14px;
+  }
+
+  .box-list-info {
+    font-size: 12px;
+  }
+}
+
+.news-links {
+  &.list-links {
+    font-size: 12px;
+  } 
+}
+
 .page-title {
   margin-bottom: 30px;
 }
