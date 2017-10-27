@@ -7,71 +7,71 @@ include modules/mixins/shop-box
 
 doctype html
 html
-  +head(head.gioi_thieu)
+  +head(head.tin_tuc)
 
-  body
-    +header('gioi-thieu')
+  body.blog
+    +header('tin-tuc')
     .main-container
       section#home-slideshow.home-slideshow.clearfix
         .container
           include modules/elements/el-slideshow
 
-      section#daily-news.daily-news.mb-30.clearfix
+      section#daily-news.daily-news.mt-30.mb-30.clearfix
         .container
           .title-one-full.pl-50
               h2 Bản tin thời sự
           .row
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', '#', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
+              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', 'single.html', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', '#', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
+              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', 'single.html', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
             .col-xs-12.col-sm-12.col-md-12.col-lg-4.mb-20
-              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', '#', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
+              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', 'single.html', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
       section#promotion-news.promotion-news.mb-30.clearfix
         .container
           .title-one-full.pl-50
             h2 Tin khuyến mãi
           .row
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', '#', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
+              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', 'single.html', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
             .col-xs-12.col-sm-12.col-md-12.col-lg-4.mb-20
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
       section#professional-news.professional-news.mb-30.clearfix
         .container
           .title-one-full.pl-50
             h2 Tin chuyên ngành
           .row
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', '#', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
+              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', 'single.html', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
             .col-xs-12.col-sm-12.col-md-12.col-lg-4.mb-20
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
       section#dollar-news.dollar-news.mb-30.clearfix
         .container
           .title-one-full.pl-50
             h2 Bản tin cổ phiếu
           .row
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', '#', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
+              +box-grid('Nhu cầu xây dựng phục hồi, ngành thép trong nước có dấu hiệu khởi sắc.', 'single.html', 'images/sp1.png', 'news-block mb-15', 'Theo nhận định của Bộ Công Thương ngày 4.11, tình hình sản xuất thép trong nước tháng 10 và 10 tháng đầu năm đều tăng trưởng dương do tận dụng cơ hội từ việc Việt Nam áp dụng biện pháp tự vệ đối với thép dài và phôi thép.')
             .col-xs-12.col-sm-6.col-md-6.col-lg-4.mb-20
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
             .col-xs-12.col-sm-12.col-md-12.col-lg-4.mb-20
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
-              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', '#', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
+              +box-list('Toàn Thắng ra mắt dòng sản phẩm Chậu rửa Inox cao cấp', 'single.html', 'images/nw1.png', 'news-block mb-15', 'Sáng ngày 14/07/2017, tại Hà Nội, công ty cổ phần Toàn Thắng đã tổ chức thành công Lễ ra mắt dòng sản phẩm Chậu rửa Inox cao cấp Toàn Thắng.')
 
     +footer()
 

@@ -23,9 +23,9 @@ $brand-info: #4bcbfa;
 
 /// Typography
 /// -------------------------------------------------
-/// $font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-menu: "utmavo", sans-serif;
-$font-family-heading: Arial, sans-serif;
+$font-family-primary: Helvetica, Arial, sans-serif;
+$font-family-menu: $font-family-primary;
+$font-family-heading: $font-family-primary;
 
 
 /// Transitions

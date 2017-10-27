@@ -224,12 +224,17 @@ License: http://codecanyon.net/licenses
 ======================================*/
 .menuzord-menu > li > .megamenu{
   width: 100%;
-  padding: 12px 9px 9px;
+  padding: 2px 0 0;
   left: 0;
   position: absolute;
   display: none;
   z-index: 99;
-  border-top: solid 1px #f0f0f0;
+  border: 0;
+  background: none;
+}
+
+.menuzord-menu > li > .megamenu > .megamenu-inner{
+  padding: 12px 9px 9px;
   background: #fff;
 }
 
@@ -606,7 +611,7 @@ Border-bottom Skin
 /* Menu items */
 .menuzord-menu > li > a{
   padding: 26px 16px 22px;
-  border-bottom: solid 4px transparent;
+  border: 0;
   -o-transition: border .3s linear;
   -moz-transition: border .3s linear;
   -webkit-transition: border .3s linear;

@@ -28,8 +28,8 @@ mixin category-box(name, url, img, cl, content, enable_url_name)
       .category-info= content
 
 // Product Box
-mixin product-box(name, url, img, content)
-  .product.mobile-100.col-xs-6.col-sm-6.col-md-4.col-lg-4
+mixin product-box(name, url, img, attr1, attr2)
+  .product.xs-full.col-xs-6.col-sm-6.col-md-4.col-lg-4
     .product-inner
       if img
         a(class='product-image', href=url)
@@ -39,5 +39,7 @@ mixin product-box(name, url, img, content)
           if name
             h4.product-name
               a(href=url)= name
-          if content
-            .product-info= content
+          if attr1 || attr2
+            .product-info
+              span= attr1
+              span= attr2

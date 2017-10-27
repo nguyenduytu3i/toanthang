@@ -1,0 +1,56 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/mixins/shop-box
+
+doctype html
+html
+  +head(head.tin_tuc)
+
+  body.single-post
+    +header('tin-tuc')
+
+    .main-container
+      .featured-image.clearfix
+        .container
+          +category-featured-image('images/1920x400.png')
+      .page-title-block.mt-30.clearfix
+        .container
+          .row
+            .col-sm-12.col-md-12.col-lg-12
+              h2.page-title.title-one-full.pl-50
+                span Bản tin thời sự
+      .container
+        .single-product-container
+          .row
+            .col-xs-12.col-sm-12.col-md-8
+              .single-post-wrap
+                h1.post-title Toàn Thắng chúc mừng ngày Doanh nhân Việt Nam
+                .post-content
+                  p
+                  p
+                    em
+                      | Tập thể CBNV Công ty Toàn Thắng gửi tặng những lẵng hoa tươi thắm cùng lời chúc tốt đẹp nhất đến Ban lãnh đạo Công ty nhân ngày Doanh nhân Việt Nam.
+                  p(style="text-align: justify;")
+                    | Nhân ngày Doanh nhân Việt Nam – 13/10, tập thể CBNV Công ty Toàn Thắng đã gửi tặng những lẵng hoa tươi thắm cùng lời chúc tốt đẹp nhất đến Ban lãnh đạo Công ty, những người đang từng ngày chèo lái đưa con thuyền Toàn Thắng ra biển lớn. Xin kính chúc các Anh, Chị luôn mạnh khỏe, hạnh phúc, ngày càng thành công trong sự nghiệp và giữ mãi nhiệt huyết để tiếp tục cống hiến vì sự phát triển vững mạnh của Công ty. <br>
+                  p(style="text-align: center;")
+                    img(alt="" src="images/anh-1.jpg" style="width: 600px; height: 350px;" type="image")
+                  p(style="text-align: center;")
+                    em Bà Nguyễn Thị Việt Hà – Đại diện Công ty tặng hoa cho ông Nguyễn Văn Thuận – Phó tổng giám đốc phụ trách kinh doanh của Công ty
+                  p <br>
+                  p(style="text-align: center;")
+                    img(alt="" src="images/anh-2.jpg" style="width: 600px; height: 350px;" type="image")
+                  p(style="text-align: center;")
+                    em Đại diện CBNV Công ty tặng hoa cho bà Nguyễn Thị Việt Hà – Phó tổng giám đốc phụ trách nội chính của Công ty
+                  p <br>
+                  p(style="text-align: justify;")
+                    | Cũng nhân dịp này, Công ty Toàn Thắng xin gửi lời chúc, lời cảm ơn chân thành nhất tới các Doanh nhân là đối tác, khách hàng, nhà phân phối, đại lý của Toàn Thắng đã luôn đồng hành và phát triển cùng Toàn Thắng trong suốt thời gian qua. Chúc Quý khách hàng luôn hạnh phúc, kinh doanh phát đạt! <br>
+                  p(style="text-align: center;")
+                    img(alt="" src="images/anh-3.jpg" style="width: 574px; height: 574px;" type="image")
+            include modules/sidebar/sidebar-blog
+
+    +footer()
+
+    script(type='text/javascript', src='js/main.js')
+
+    // include modules/head/analytics
