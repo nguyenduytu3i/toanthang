@@ -1,0 +1,27 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/mixins/box-list
+include modules/mixins/shop-box
+
+doctype html
+html
+  +head(head.san_pham)
+
+  body.landing-page
+    +header('san-pham')
+    .main-container
+      .container
+        h2.page-title.title-three
+          span Chậu rửa Inox cao cấp
+      +category-featured-image('images/banner-category.jpg', 'Chậu rửa bát Inox cao cấp', true, 'box-right')
+      +category-featured-image('images/banner-category.jpg', 'Chậu rửa bát Inox cao cấp', true, 'box-left')
+      +category-featured-image('images/banner-category.jpg', 'Chậu rửa bát Inox cao cấp', true, 'box-right')
+      +category-featured-image('images/banner-category.jpg', 'Chậu rửa bát Inox cao cấp', true, 'box-left')
+
+    +footer()
+
+    script(type='text/javascript', src='js/main.js')
+
+    include modules/head/script
+    // include modules/head/analytics

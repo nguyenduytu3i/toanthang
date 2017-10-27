@@ -8,18 +8,8 @@ include ../mixins/social
           p.copyright © 2007 - 2017 TOANTHANG - ALL RIGHTS RESERVED.
         .fcopyright-col.col-xs-5.col-sm-6.col-md-6.col-lg-6.text-right
           ul.social.list-inline
-            li 
-              a(href='#', title="facebook")
-                img(src='images/facebook.png')
-            li 
-              a(href='#', title="twitter")
-                img(src='images/twitter.png')
-            li 
-              a(href='#', title="instagram")
-                img(src='images/instagram.png')
-            li 
-              a(href='#', title="youtube")
-                img(src='images/youtube.png')
-            li 
-              a(href='#', title="phone")
-                img(src='images/phone.png')
+            +social('', 'fa fa-facebook', '#')
+            +social('', 'fa fa-twitter', '#')
+            +social('', 'fa fa-instagram', '#')
+            +social('', 'fa fa-youtube-play', '#')
+            +social('', 'fa fa-whatsapp', '#') 

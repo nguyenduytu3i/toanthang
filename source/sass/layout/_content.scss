@@ -2,6 +2,75 @@
 // Layout :: Content
 // --------------------------------------------------
 
+.featured-image {
+  position: relative;
+
+  .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .featured-image-container {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+  .featured-image-content {
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    margin: auto;
+    max-width: 420px;
+    max-height: 85%;
+    padding: 0 30px 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+
+    h2,
+    h3 {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      min-height: 80px;
+    }
+
+    .category-info {
+      padding-right: 65px;
+    }
+  }
+
+  &.box-left {
+    .featured-image-content {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  &.box-right {
+    .featured-image-content {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+.landing-page {
+  .el-slideshow,
+  .featured-image {
+    margin-top: 0;
+  }
+}
+
 .list-links {
   > a,
   > li {
@@ -23,12 +92,22 @@
 
 .news-links {
   &.list-links {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    a {
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
   } 
 }
 
 .page-title {
   margin-bottom: 30px;
+
+  &.title-three {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
 }
 
 .category-container {
@@ -129,8 +208,10 @@
   .product-inner {
     position: relative;
     margin-bottom: 10px;
-    padding: 0;
-    border: 1px solid #dc6526;
+    padding: 15px 5px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
 
     .product-content {
       font-family: "Oswald" !important;
@@ -162,10 +243,13 @@
       float: right;
       width: 45%;
       text-align: right;
-      padding-right: 3px;
       span {
         display: block;
       }
+    }
+
+    &:hover {
+      border-color: #dc6526;
     }
   }
 }
@@ -368,7 +452,7 @@
   }
 
   .block-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .block-content {
@@ -428,6 +512,36 @@
 @media (min-width: 1200px) {
   .sidebar.sidebar-shop .sidebar-inner {
     padding-left: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .featured-image {
+    .featured-image-content {
+      left: 0;
+      right: 0;
+      text-align: center;
+      max-width: 90%;
+
+      .category-info {
+        padding-right: 0;
+      }
+    }
+
+    .featured-image-content {
+      h2,
+      h3 {
+        min-height: 55px;
+      }
+    }
+
+    &.box-left,
+    &.box-right {
+      .featured-image-content {
+        left: 0;
+        right: 0;
+      }
+    }
   }
 }
 

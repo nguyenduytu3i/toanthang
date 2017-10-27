@@ -1,14 +1,26 @@
 // Category image
-mixin category-featured-image(img, name, content)
-  .featured-image
+mixin category-featured-image(img, name, content, align)
+  div(class=align ? 'featured-image ' + align + ' clearfix' : 'featured-image clearfix')
     if img
       img.img-responsive(src=img, alt="")
     if name || content
-      .featured-image-content
-        if name
-          h2= name
-        if content
-          .category-info= content
+      .container
+        .featured-image-container
+          .featured-image-content
+            if name
+              h2= name
+            if content
+              .category-info
+                p
+                  strong Công nghệ 
+                  | ép liền khối, không hàn mài, không mối ghép.
+                  strong Xiphon 
+                  | ngăn khử mùi thông minh
+                  strong Công nghệ 
+                  | đánh bóng bề mặt giúp tăng độ bóng sản phẩm khả năng
+                  strong siêu chống ồn
+                  strong Thân thiện 
+                  | với môi trường
 
 // Category Box
 mixin category-box(name, url, img, cl, content, enable_url_name)

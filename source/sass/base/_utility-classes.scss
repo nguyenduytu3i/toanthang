@@ -49,6 +49,22 @@ $zero-property-map: (
   }
 }
 
+.d-i {
+  display: inline;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.d-f {
+  display: flex;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;

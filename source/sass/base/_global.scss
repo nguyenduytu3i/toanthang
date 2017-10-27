@@ -13,11 +13,31 @@
 
 @font-face {
   font-family: 'UTM Avo';
+  src: url('../fonts/UTMAvo-BoldItalic.eot');
+  src: url('../fonts/UTMAvo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/UTMAvo-BoldItalic.woff') format('woff'),
+    url('../fonts/UTMAvo-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UTM Avo';
   src: url('../fonts/UTMAvoBold.eot');
   src: url('../fonts/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/UTMAvoBold.woff') format('woff'),
     url('../fonts/UTMAvoBold.ttf') format('truetype');
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Avo';
+  src: url('../fonts/UTMAvo.eot');
+  src: url('../fonts/UTMAvo.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/UTMAvo.woff') format('woff'),
+    url('../fonts/UTMAvo.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -31,36 +51,25 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: 'UTM Avo';
-  src: url('../fonts/UTMAvo-BoldItalic.eot');
-  src: url('../fonts/UTMAvo-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/UTMAvo-BoldItalic.woff') format('woff'),
-    url('../fonts/UTMAvo-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'UTM Avo';
-  src: url('../fonts/UTMAvo.eot');
-  src: url('../fonts/UTMAvo.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/UTMAvo.woff') format('woff'),
-    url('../fonts/UTMAvo.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-size: 14px;
   font-family: $font-family-primary;
   background-color: $white;
 }
 
+.megamenu .item-new,
+.megamenu .item-new h5,
+.sidebar .block-content .box-list-title {
+  font-family: $font-family-primary !important;
+}
+
 span.text,
 .menuzord .menuzord-menu > li > a,
 #main-menu .ulmenu > .limenu > .abmenu,
-.megamenu .box-title {
+.megamenu .box-title,
+.megamenu .heading.color,
+.megamenu .contact-form,
+.featured-image .featured-image-content {
   font-family: $font-family-menu !important;
   font-weight: normal;
 }
@@ -96,6 +105,12 @@ a {
 .title-two h2,
 .title-two h3,
 .title-two h4,
+.title-three,
+.title-three a,
+.title-three span,
+.title-three h2,
+.title-three h3,
+.title-three h4,
 .megamenu .title-new,
 .footer .title span {
   font-family: $font-family-heading !important;

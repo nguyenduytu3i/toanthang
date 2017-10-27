@@ -1,17 +1,29 @@
+include ../mixins/item-menu
+
 #header-top.header-top.clearfix.hidden-xs.hidden-sm
   .container
     .row
-      .col-sm-6.col-md-4
+      .col-sm-6.col-md-3
         .logo.logo-home.text-center
           a(href='index.html' target='_self' title='')
             img.img-responsive(src="images/logo.png" alt="")
-      .col-sm-6.col-md-8
+      .col-sm-6.col-md-9
         .header-static.float-right
-          img.lang-img(src="images/uk.png" alt="")
-          // Search form
-          form.search-form( name="search-form" action='/san-pham/tags/' method='POST')
-            .input-group
-              input#tag.form-control(type='text', placeholder='Tìm kiếm ...' name='tag')
-              span.input-group-btn
-                button.btn.btn-search(type='submit')
-                  i.fa.fa-search
+          .lang.d-b.text-right
+            a.d-ib(href="#")
+              img.lang-img(src="images/uk.png" alt="")
+          .static-block
+            // Search form
+            form.search-form.d-ib.float-right( name="search-form" action='/san-pham/tags/' method='POST')
+              .input-group
+                input#tag.form-control(type='text', placeholder='Tìm kiếm ...' name='tag')
+                span.input-group-btn
+                  button.btn.btn-search(type='submit')
+                    i.fa.fa-search
+            ul.menu-top.list-inline.d-ib.float-right
+              +item-menu('Về chúng tôi', '#', 'list-inline-item')
+              +item-menu('Tin tức', '#', 'list-inline-item')
+              +item-menu('Hệ thống phân phối', '#', 'list-inline-item')
+              +item-menu('Cổ đông & nhà đầu tư', '#', 'list-inline-item')
+              +item-menu('Tuyển dụng', '#', 'list-inline-item')
+              +item-menu('Liên hệ', '#', 'list-inline-item')
