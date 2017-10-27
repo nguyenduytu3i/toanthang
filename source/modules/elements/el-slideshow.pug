@@ -1,19 +1,11 @@
-#jssor_1.el-slideshow(style="position: relative; top: 0px; left: 0px; height: 400px;")
-  div(data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1170px; height: 400px;")
-    div
-      img.img-responsive(src="images/slide.png" u="image" alt="slide-1")
-    div
-      img.img-responsive(src="images/slide.png" u="image" alt="slide-2")
-    div
-      img.img-responsive(src="images/slide.png" u="image" alt="slide-3")
-  style(type='text/css').
-    .jssorb105 {position:absolute;}
-    .jssorb105 .i {position:absolute;cursor:pointer;}
-    .jssorb105 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
-    .jssorb105 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#2b1908;stroke-opacity:.5;stroke-width:2000;}
-    .jssorb105 .iav .b {fill:#fff;fill-opacity:1;stroke:#46d1d3;stroke-opacity:1;stroke-width:2000;}
-    .jssorb105 .i.idn {opacity:.3;}
-  .jssorb105(data-u="navigator" style="position:absolute;bottom:16px;right:16px;" data-scale="0.5" data-scale-bottom="0.75" data-scale-ratio="1")
-    .i(data-u="prototype" style="width:16px;height:16px;")
-      svg(viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;")
-        circle.b(cx="8000" cy="8000" r="5800")
+.row
+  .col-md-12
+    .el-slideshow.slider-main#js-slider-main
+      .item
+        img(src='images/slide.png')
+      .item
+        img(src='images/slide.png')
+      .item
+        img(src='images/slide.png')
+      .item
+        img(src='images/slide.png')
