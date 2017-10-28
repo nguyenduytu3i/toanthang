@@ -593,6 +593,19 @@
   .shop-pagination, .blog-pagination {
     text-align: center;
   }
+
+  .featured-image {
+
+    .featured-image-content {
+      font-size: 12px;
+
+      h2,
+      h3 {
+        font-size: 16px;
+        min-height: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 721px) {
@@ -658,6 +671,20 @@
 
   .xs-full {
     width: 100% !important;
+  }
+
+  .featured-image {
+
+    .featured-image-content {
+      h2,
+      h3 {
+        margin-top: 35px;
+      }
+
+      .category-info {
+        display: none !important;
+      }
+    }
   }
 }
 
