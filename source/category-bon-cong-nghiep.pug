@@ -1,0 +1,41 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/mixins/box-list
+include modules/mixins/shop-box
+include modules/mixins/pagination
+
+doctype html
+html
+  +head(head.san_pham)
+
+  body.category-page
+    +header('category')
+    .main-container
+      +category-featured-image('images/banner-category.jpg')
+      .category-container.mb-30.clearfix
+        .container
+          .row
+            .col-sm-12.col-md-12.col-lg-12
+              h2.page-title.title-one-full
+                span Bồn công nghiệp
+            .products
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-1.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-2.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-3.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-4.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-1.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-3.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-4.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-2.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+              +product-box('Bồn CN T7541', 'product-bon-cong-nghiep.html', 'images/category-product-bcn-1.jpg', 'KT. Bồn: 1050 x 450 x 235 mm', 'KT. hố : 1030 x 430 mm')
+      .shop-pagination
+        .container
+          +pagination()
+
+    +footer()
+
+    script(type='text/javascript', src='js/main.js')
+
+    include modules/head/script
+    // include modules/head/analytics
