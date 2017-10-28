@@ -484,6 +484,12 @@ p {
     min-height: 30px;
   }
 
+  .box {
+    .box-title {
+      font-weight: bold;
+    }
+  }
+
   .owl-carousel .owl-item {
     img {
       max-width: 100% !important;
