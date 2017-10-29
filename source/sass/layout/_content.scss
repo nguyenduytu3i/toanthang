@@ -360,6 +360,10 @@
       }
     }
 
+    figcaption {
+      display: none;
+    }
+
     &.slick-slider {
       .slick-arrow {
         &.slick-prev,
@@ -816,4 +820,19 @@
       width: 100%;
     }
   }
+}
+
+// Product popup
+.pswp {
+  z-index: 999999999;
+}
+
+.pswp__counter {
+  border: 0;
+  opacity: 1;
+  color: #fff;
+  background: #0c8c46;
+}
+.pswp__bg {
+  background: rgba(0, 0, 0, 0.9);
 }
