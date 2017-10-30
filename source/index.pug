@@ -3,6 +3,7 @@ include modules/header/header
 include modules/footer/footer
 include modules/mixins/box-list
 include modules/mixins/shop-box
+include modules/popup/popup
 
 doctype html
 html
@@ -80,7 +81,7 @@ html
               +category-box('', '#', 'images/category-chau-rua-inox.png', '', '', false)
 
     +footer()
-
+    +popup
     script(type='text/javascript', src='js/main.js')
 
     include modules/head/script

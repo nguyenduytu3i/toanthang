@@ -3,6 +3,7 @@ include modules/header/header
 include modules/footer/footer
 include modules/mixins/box-list
 include modules/mixins/shop-box
+include modules/popup/popup
 
 doctype html
 html
@@ -20,6 +21,7 @@ html
       +category-featured-image('images/banner-category.jpg', 'Chậu rửa bát Inox cao cấp', true, 'box-left')
 
     +footer()
+    +popup
 
     script(type='text/javascript', src='js/main.js')
 

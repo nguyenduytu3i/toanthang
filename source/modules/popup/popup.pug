@@ -1,0 +1,24 @@
+mixin popup
+  #modal-onload.modal.fade.custom-modal(tabindex='-1', role='dialog')
+    .modal-dialog.modal-lg(role='document')
+      .modal-content
+        .modal-body
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+          h3.modal-title Khuyễn mại cuối năm - Sale Off 50%
+          h5 Bình Nước Nóng Toàn Thắng Giải pháp Tốt & Hiệu quả nhất cho mùa đông
+          p Tầng 7, Tòa nhà số 8 Quang Trung, Quận Hà Đông, Hà Nội 
+          p Hãy để lại email của bạn cho chúng tôi để nhận được những ưu đãi tốt nhất
+          form.contact-form(name='contact-form', action='/contact/', method='POST')
+            .form-group
+              input.form-control(placeholder='Họ và tên', name='name', type='text')
+            .form-group
+              input.form-control(placeholder='Email', name='email', type='text')
+            .form-group
+              input.form-control(placeholder='Số điện thoại', name='phone-number', type='text')
+            .form-group
+              textarea.form-control(type='text', placeholder='Nhập nội dung', name='content')
+            .form-group
+              button.btn.btn-default(type='submit') Gửi
+
+

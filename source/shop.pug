@@ -3,6 +3,7 @@ include modules/header/header
 include modules/footer/footer
 include modules/mixins/box-list
 include modules/mixins/shop-box
+include modules/popup/popup
 
 doctype html
 html
@@ -35,6 +36,7 @@ html
               +category-box('Bình nước nóng', 'category.html', 'images/category-binh-nuoc-nong.png', '', '', false)
 
     +footer()
+    +popup
 
     script(type='text/javascript', src='js/main.js')
 
