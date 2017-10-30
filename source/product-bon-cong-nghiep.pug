@@ -2,6 +2,7 @@ include modules/head/head
 include modules/header/header
 include modules/footer/footer
 include modules/mixins/shop-box
+include modules/popup/popup
 
 doctype html
 html
@@ -97,6 +98,7 @@ html
             include modules/sidebar/sidebar-shop
 
     +footer()
+    +popup
 
     script(type='text/javascript', src='js/main.js')
 

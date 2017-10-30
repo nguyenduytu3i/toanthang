@@ -2,6 +2,7 @@ include modules/head/head
 include modules/header/header
 include modules/footer/footer
 include modules/mixins/shop-box
+include modules/popup/popup
 
 doctype html
 html
@@ -24,6 +25,14 @@ html
             .col-xs-12.col-sm-12.col-md-8
               .single-post-wrap
                 h1.post-title Toàn Thắng chúc mừng ngày Doanh nhân Việt Nam
+                .control-blog
+                  p
+                    a(href='#')
+                      i.fa.fa-file-pdf-o
+                      | Download PDF
+                    a(href='#')
+                      i.fa.fa-print
+                      | Print
                 .post-content
                   p
                   p
@@ -50,6 +59,7 @@ html
             include modules/sidebar/sidebar-blog
 
     +footer()
+    +popup
 
     script(type='text/javascript', src='js/main.js')
 

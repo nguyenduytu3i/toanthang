@@ -512,6 +512,22 @@
   }
 }
 
+.control-blog {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0 5px 0;
+
+  a {
+    display: inline-block;
+
+    i {
+      margin-right: 5px;
+      margin-left: 15px;
+    }
+  }
+}
+
 // Responsive
 @media (min-width: 1200px) {
   .sidebar.sidebar-shop .sidebar-inner {
@@ -835,4 +851,91 @@
 }
 .pswp__bg {
   background: rgba(0, 0, 0, 0.9);
+}
+
+//Modal
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.custom-modal .modal-dialog {
+  width: 800px;
+  height: 600px;
+  max-width: 100%;
+
+  @include respond-to('tablet-and-down') {
+    width: auto;
+    height: auto;
+  }
+}
+
+.custom-modal .modal-dialog .modal-content {
+  border-radius: 0;
+  background-color: $brand-primary;
+  color: #fff;
+  border: 0;
+  text-align: center;
+  padding: 25px;
+  
+  .modal-body {
+    border: 0;
+    padding: 35px;
+    position: relative;
+    border: 2px solid #fff;
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: #fff!important;
+      font-weight: normal;
+      opacity: 1;
+    }
+
+    h3 {
+      margin-top: 30px;
+    }
+
+    @include respond-to('tablet-and-down') {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+    }
+    h5 {
+      line-height: 1.4;
+    }
+
+    form {
+      margin-top: 30px;
+      display: inline-block;
+      width: 100%;
+      clear: both;
+
+      .btn {
+        border-radius: 0;
+        border: 1px solid #fff;
+        min-width: 120px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 0;
+  }
 }
