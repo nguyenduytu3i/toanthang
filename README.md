@@ -1,36 +1,28 @@
 # ToanThang Website
 
-## ***** Feedback *****
+## *** Feedback ***
 
 ### I. Backend
 
-#### 1. Trang tuyển dụng
-
-```
-Tách riêng thành 1 crud riêng.
-```
-
-#### 2. ACL
+#### 1. ACL
 
 ```
 Role: Admin, Manager, Member
 ```
 
-#### 3. Editor Style
-
-```
-- Thêm in nghiêng, font-size
-- Heading error
-- Content on desktop and mobile when resizing image
-```
-
-#### 4. Tách riêng "tin tức" với "Chính sách bảo hành & lắp đặt", "Thông tin hữu ích", dự án
+#### 2. Tách riêng "tin tức" với "Chính sách bảo hành & lắp đặt", "Thông tin hữu ích", dự án
 
 ```
 Phần này hỏi lại. Vì hiện tại đang là tách riêng. ko phải chung. chắc họ có sự nhầm lẫn
 ```
 
-#### 5. Trang Cổ đông và nhà đầu tư, hệ thống phân phối
+#### 3. Trang tuyển dụng
+
+```
+Tách riêng thành 1 crud riêng.
+```
+
+#### 4. Trang Cổ đông và nhà đầu tư, hệ thống phân phối
 
 ```
 Tách thành 2 crud riêng. Có options khác nhau.
@@ -40,9 +32,15 @@ Tách thành 2 crud riêng. Có options khác nhau.
 - Trang hệ thống phân phối: Làm như ảnh ( có sử dụng map chart).
 ```
 
-#### 6. Thêm thông báo khi có comments
+#### 5. Editor Style
 
-#### 7. Newsletter Popup
+```
+- Thêm in nghiêng, font-size
+- Heading error
+- Content on desktop and mobile when resizing image
+```
+
+#### 6. Newsletter Popup
 
 ```
 Phần này tách ra 1 page config riêng tên là "Newsletter Popup" gồm những options:
@@ -57,6 +55,8 @@ Phần này tách ra 1 page config riêng tên là "Newsletter Popup" gồm nh�
 - Popup title
 - Popup content
 ```
+
+#### 7. Thêm thông báo khi có comments
 
 #### 8. Post Comments, Product Comments
 
@@ -84,6 +84,12 @@ Add options:
 - Cái này thì cứ thêm 1 option cho Show/hide Top menu.
 
 ** Note: Thấy phần menu cũng nhiêu feedback. Nên tạo riêng 1 pages cho configs menu **
+```
+
+#### 11. Thêm options Custom JS
+
+```
+Để thêm scripts cho Google Analytics và các custom scripts khác như: V-Chat.
 ```
 
 ### II. Frontend
