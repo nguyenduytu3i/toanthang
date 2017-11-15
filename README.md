@@ -1,6 +1,6 @@
 # ToanThang Website
 
-## Feedback
+## ***** Feedback *****
 
 ### I. Backend
 
@@ -35,7 +35,7 @@ Phần này hỏi lại. Vì hiện tại đang là tách riêng. ko phải chun
 ```
 Tách thành 2 crud riêng. Có options khác nhau.
 
-- Trang cổ đông và nhà đầu tư: Làm giống trang [http://www.sonhasg.com.vn/co-dong-nha-dau-tu.aspx](http://www.sonhasg.com.vn/co-dong-nha-dau-tu.aspx)
+- Trang cổ đông và nhà đầu tư: Làm giống trang [`sonhasg.com.vn`](http://www.sonhasg.com.vn/co-dong-nha-dau-tu.aspx)
 
 - Trang hệ thống phân phối: Làm như ảnh ( có sử dụng map chart).
 ```
